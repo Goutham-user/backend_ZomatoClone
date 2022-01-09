@@ -1,0 +1,29 @@
+{
+  "name": "zomato_clone_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "expressjs",
+    "mongodb",
+    "zomatoclone",
+    "nodejs"
+  ],
+  "author": "Sai Goutham Vadapally",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "https": "^1.0.0",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.13",
+    "uuid": "^8.3.2"
+  }
+}
