@@ -1,4 +1,4 @@
-const locationsModel = require('../Models/Locations');
+const locationsModel = require('../Models/locations');
 
 exports.getLocations = (req, res) => {
     locationsModel.find().then(_res =>
