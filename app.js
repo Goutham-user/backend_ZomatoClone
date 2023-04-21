@@ -5,7 +5,7 @@ const cors = require('cors')
 const router= require('./Routes/index')
 
 
-const port = 2000;
+const port = process.env.PORT || 2000;
 const hostName = 'localhost';
 const dbUserName = 'user1';
 const dbPassword = 'GhBeqkOyelWQ6hbK';
@@ -25,7 +25,7 @@ app.use('/', router);
 
 mongose.connect(atlasDBURL, { useNewUrlParser: true, useUnifiedTopology: true }).then(res =>{
     app.listen(port, hostName, ()=>{
-        console.log(`Server is active and running on http://${hostName}:${port}`);    
+        console.log(`Server is active and running on ${port}`);    
     })
 }
 
