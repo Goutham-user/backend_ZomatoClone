@@ -24,7 +24,7 @@ app.use(express.json());
 app.use('/', router);
 
 mongose.connect(atlasDBURL, { useNewUrlParser: true, useUnifiedTopology: true }).then(res =>{
-    app.listen(port, hostName, ()=>{
+    app.listen(port, ()=>{
         console.log(`Server is active and running on ${port}`);    
     })
 }
